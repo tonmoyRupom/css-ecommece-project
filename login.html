@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an Ecommerce Website">
+    <title>Ecommerce Project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Starts Here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav_link"><img class="profile-icon" src="./images/tonmoy.jpg" alt="Profile icon"></a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a class="nav-brand" href="index.html" class="nav_link">Tonmoy Express</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Cart 2 products-124.09$
+                </a>
+            </li>
+        </ul>
+     </nav>
+
+     <Main>
+        <section class="register">
+            <h2 class="section-title text-center">User Login</h2>
+            <div class="card">
+                <form action="" class="form">
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="passsword">Password</label>
+                        <input type="text" id="password" required autocomplete="current-password">
+                    </div>
+                    <div class="form-control flex-center form-btn-field">
+                        <button type="submit" class="btn contact-btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+     </Main>
+
+     <!-- /* Footer Starts Here */ -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer-input" placeholder="Your Email Address">
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2025 Tonmoy Express.All right reserved</p>
+        </div>
+    </footer>
+     <!-- /* Footer Ends Here */ -->
+     <script src="./scripts/index.js"></script>
+</body>
+</html>

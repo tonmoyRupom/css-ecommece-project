@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an Ecommerce Website">
+    <title>Ecommerce Project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Starts Here -->
+     <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+     <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav_link"><img class="profile-icon" src="./images/tonmoy.jpg" alt="Profile icon"></a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a class="nav-brand" href="index.html" class="nav_link">Tonmoy Express</a>
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Cart 2 products-124.09$
+                </a>
+            </li>
+        </ul>
+     </nav>
+
+     <!-- header starts here  -->
+     <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner-title" behavior="" direction="">50% Discount Going</marquee>
+        </div>
+        
+        <div class="features flex-space-around">
+            <article class="feature flex-center">
+                <i class="fa-solid fa-truck feature-icon"></i>
+                <h3>Shipping within 3 days</h3>
+            </article>
+
+            <article class="feature flex-center">
+                <i class="fa-brands fa-rocketchat feature-icon"></i>
+                <h3>Support 24/7</h3>
+            </article>
+
+            <article class="feature flex-center">
+                <i class="fa-regular fa-credit-card feature-icon"></i>
+                <h3>Save Payment</h3>
+            </article>
+        </div>
+
+    </header>
+     <!-- header ends here -->
+
+     <Main class="flex-center">
+        <!-- <h2>Home Page</h2> -->
+         <div class="sidebar">
+            <section class="categories-section">
+                <h2 class="section-title">
+                    Categories
+                </h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">
+                            Phone
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                            Tablets
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="televisions">
+                            <input type="checkbox" name="televisions" id="televisions" value="televisions">
+                            Televisions
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="computers">
+                            <input type="checkbox" name="computers" id="computers" value="computers">
+                            Computers
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="headphones">
+                            <input type="checkbox" name="headphones" id="headphones" value="headphones">
+                            Headphones
+                    </li>
+                </ul>
+            </section>
+
+            <section class="price-section">
+                <h2 class="section-title">
+                    Price Range
+                </h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <label for="price1">
+                            <input type="radio" name="price1" id="price1" value="[0,20]">
+                            $0-$20
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="price2">
+                            <input type="radio" name="price2" id="price2" value="[21,50]">
+                            $21-$50
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="price3">
+                            <input type="radio" name="price3" id="price3" value="[51,100]">
+                            $51-$100
+                        </label>
+                    </li>
+                    
+                    <li class="list-item">
+                        <label for="price4">
+                             <input type="radio" name="price4" id="pric104" value="[101,500]">
+                            $101-$500
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="price5">
+                            <input type="radio" name="price5" id="price5" value="[501,1000]">
+                            $501-$1000
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="shipping-section">
+                <h2 class="section-title">
+                    Shipping Options
+                </h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">
+                            Free
+                        </label>
+                    </li>
+
+                    <li class="list-item">
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">
+                            Paid
+                        </label>
+                    </li>
+                </ul>
+            </section>
+         </div>
+
+         <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions-sort">
+                    <label for="sort">Sort By</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Most cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest Discount first</option>
+                    </select>
+                </div>
+
+                <div class="actions-search">
+                    <input type="text" placeholder="Search Product">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Product Section starts here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 Sold </span>
+                    </div>
+
+                    <img src="./images/product1.jpeg" alt="product1" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Sony V-4 Headphone
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-reting">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in stock</span>
+                        <hr class="hr-design">
+                        <span>9 Sold </span>
+                    </div>
+
+                    <img src="./images/product2.jpeg" alt="product2" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Apple Smart Watch
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$425.99</h4>
+                        <p class="product-reting">Rating: 4.2/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>12 Sold </span>
+                    </div>
+
+                    <img src="./images/product3.jpeg" alt="product3" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Apple Smart Glass
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$325.99</h4>
+                        <p class="product-reting">Rating: 3.8/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 Sold </span>
+                    </div>
+
+                    <img src="./images/product1.jpeg" alt="product1" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Sony V-4 Headphone
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-reting">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in stock</span>
+                        <hr class="hr-design">
+                        <span>9 Sold </span>
+                    </div>
+
+                    <img src="./images/product2.jpeg" alt="product2" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Apple Smart Watch
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$425.99</h4>
+                        <p class="product-reting">Rating: 4.2/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>12 Sold </span>
+                    </div>
+
+                    <img src="./images/product3.jpeg" alt="product3" class="product-img">
+
+                    <div class="procut-body">
+                        <h3 class="product-name">
+                            Apple Smart Glass
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptate cumque vel libero tempora consequuntur....
+                            <a href="./product.html" class="learn-more">Learn More</a>
+                        </p>
+
+                        <h4 class="product-price">$325.99</h4>
+                        <p class="product-reting">Rating: 3.8/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+                <button class="btn pagination_btn">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn pagination_btn">2</button>
+                <button class="btn pagination_btn">3</button>
+                <button class="btn pagination_btn">4</button>
+                <button class="btn pagination_btn">5</button>
+                <button class="btn pagination_btn">6</button>
+                <button class="btn pagination_btn">7</button>
+                <button class="btn pagination_btn">8</button>
+                <button class="btn pagination_btn">9</button>
+                <button class="btn pagination_btn">10</button>
+                <button class="btn pagination_btn">11</button>
+                <button class="btn pagination_btn">...</button>
+                <button class="btn pagination_btn">100</button>
+                <button class="btn pagination_btn">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+            <!-- Product Section starts here -->
+         </div>
+     </Main>
+
+     <!-- /* Footer Starts Here */ -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer-input" placeholder="Your Email Address">
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2025 Tonmoy Express.All right reserved</p>
+        </div>
+    </footer>
+     <!-- /* Footer Ends Here */ -->
+      <script src="./scripts/index.js"></script>
+</body>
+</html>
